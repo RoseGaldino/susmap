@@ -6,6 +6,7 @@ header {
     left: 0;
     border-bottom: 1px solid #ccc;
     background: rgb(37, 20, 190);
+
   }
 
 header a {
@@ -27,26 +28,26 @@ header h1{
 }
 
 .item{
-    background-color: rgb(73, 200, 204);
+    /* background-color: rgba(55, 87, 226, 0.438); */
     color: blueviolet;
     margin: 20px;
 }
 .item1{
    height: 100px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
-#f {
-    margin-top: 40px;
+p {
+    margin-top: 10px;
 }
 .item2{
     height: 100px;
-     width: 200px;
+     width: 250px;
      text-align: center;
  }
  .item3{
     height: 100px;
-     width: 200px;
+     width: 250px;
      text-align: center;
  }
 
@@ -54,3 +55,11 @@ header h1{
      
      text-decoration: none;
  }
+
+ img {
+     width: 50%;
+ }
+
+.plano-externo{
+    background-color: #e6f5ff;
+}
