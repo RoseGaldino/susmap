@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { FormularioComponent } from './componentes/formulario/formulario.component';
+import { RodapeComponent } from './componentes/rodape/rodape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    FormularioComponent
+    FormularioComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
