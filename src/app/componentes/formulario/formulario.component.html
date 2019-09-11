@@ -1,11 +1,54 @@
-<header>
-    <h1 class="fL">
-      <a>SUSMap</a>
-    </h1>
-</header>
-<div class="container">
-      <div class="item item1"><a href="#" title="Clique para preencher o formulário" id="f">Formulário</a></div>
-      <div class="item item2"><a href="#">Histórico</a></div>
-      <div class="item item3"><a href="#">Manual</a></div>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3e0ff;">
+  <a class="navbar-brand espaco" href="#" id="espaco">SUSMAP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a routerLink="" class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+
+</nav>
+<div class="container plano-externo">
+  <div>
+      <h2>Preencha o formulário abaixo:</h2>
+  </div>
+  
+  <form id="formulario"> 
+      <fieldset>
+          <legend>Sintomas</legend>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Contrações em gestantes</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck2">
+          <label class="custom-control-label" for="customCheck2">Diárreia</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck3">
+          <label class="custom-control-label" for="customCheck3">Dor de cabeça</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck4">
+          <label class="custom-control-label" for="customCheck4">Dor nas costas</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck5">
+          <label class="custom-control-label" for="customCheck5">Dor para urinar</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck6">
+          <label class="custom-control-label" for="customCheck6">Dor na garganta</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck7">
+          <label class="custom-control-label" for="customCheck7">Fratura na clavícula</label>
+      </div>
+    </fieldset>
+      <button type="submit" class="btn btn-primary">Próximo</button>
+    </form>
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </div>
 

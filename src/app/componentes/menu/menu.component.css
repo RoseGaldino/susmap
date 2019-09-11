@@ -9,6 +9,10 @@ header {
 
   }
 
+.espaco{
+    margin-left: 10%;
+}
+
 header a {
     text-decoration: none;
     color: black;
