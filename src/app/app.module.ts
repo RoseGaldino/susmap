@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
-import { UnidadeAtendimentoComponent } from './unidade-atendimento/unidade-atendimento.component';
+import { UnidadeAtendimentoComponent } from './componentes/unidade-atendimento/unidade-atendimento.component';
+import { TelaLoginComponent } from './componentes/tela-login/tela-login.component';
+import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { UnidadeAtendimentoComponent } from './unidade-atendimento/unidade-atend
     MenuComponent,
     FormularioComponent,
     RodapeComponent,
-    UnidadeAtendimentoComponent
+    UnidadeAtendimentoComponent,
+    TelaLoginComponent,
+    CabecalhoComponent,
+
   ],
   imports: [
     BrowserModule,
