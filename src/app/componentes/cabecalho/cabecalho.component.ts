@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-cabecalho',
@@ -8,20 +9,13 @@ import { Router } from '@angular/router';
 })
 export class CabecalhoComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private authServices: AuthService) { }
 
   ngOnInit() {
   }
 
-  visualizarMenu() {
-    if (this.router.url !== '/') {
-      console.log(this.router.url);
-      return true;
-    }
-    else {
-      console.log(this.router.url);
-      return false;
-    }
-  }
+  visualizarMenu(){
+    return this.authServices.visualizarMenu();
+  };
 
 }

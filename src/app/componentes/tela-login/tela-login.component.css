@@ -32,4 +32,8 @@
     padding: 1rem;
     transition: all 0.2s;
 }
+
+.botao{
+    text-decoration: none;
+}
   
