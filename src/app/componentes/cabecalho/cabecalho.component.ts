@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cabecalho',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabecalhoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  visualizarMenu() {
+    if (this.router.url !== '/') {
+      console.log(this.router.url);
+      return true;
+    }
+    else {
+      console.log(this.router.url);
+      return false;
+    }
   }
 
 }
