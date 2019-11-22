@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QualificadoresService } from 'src/app/services/qualificadores.service';
 
 @Component({
   selector: 'app-formulario',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
-  constructor() { }
+  public sintomas;
+
+  constructor(private qualificadoService: QualificadoresService) { 
+    this.getQualificadores();
+  }
+
+
+  getQualificadores() {
+    this.qualificadoService.getQualificadores().subscribe((data => {
+      this.sintomas = data;
+      console.log(this.sintomas);
+    }));
+  }
 
   ngOnInit() {
+    
   }
 
 }
